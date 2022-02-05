@@ -7,6 +7,7 @@
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
         <link rel='stylesheet' href='style.css'>
         <script src='script.js' defer></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
         <body>
             <header>
 
@@ -24,62 +25,88 @@
                     </ul>
                 </nav>
             </header>
-            <div id='menu' class='fas fa-bars'></div>
-            <div id='home'></div>
-            <section>
-                <div class='home'>
-                  <h3>Hey There</h3>
-                  <h1>I'M BABATUNDE AWOTIMILEHIN</h1>
-                  <p> My name is Babatunde Awotimilehin am a front-end web developer</p>
-                  <a href="#about"><button class='btn'>about me<i class='fas fa-user'></i></button></a>
-                </div>
-            </section>
-            <section>
-                <div class='about' id='about'>
-                    <div class='heading'>
-                        <h1>About <span>me</span></h1>
-                        
+                <div id='menu' class='fas fa-bars'></div>
+                <div id='home'></div>
+                <section>
+                    <div class='home'>
+                      <h3>Hey There</h3>
+                      <h1>I'M BABATUNDE AWOTIMILEHIN</h1>
+                      <p> My name is Babatunde Awotimilehin am a <span class='typing.text'></span>front-end web developer</p>
+                      <a href="#about"><button class='btn'>about me<i class='fas fa-user'></i></button></a>
                     </div>
-                    <p>Soon to be radiologist. Experienced with javascript,
-                        React js,Css3,Html5.
-                    </p>
-                    <p>Quick to learn and master new technologies, successful working in both team and self-directed settings.</p>
-                </div>
-                <p class='skill'>
-                    Skill
-                </p>
-                <div class='skillsImage'>
-
-                    <img src='data:image/jpeg;base64,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'>
-                     <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'alt='css'>
-                     <img scr='https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Flogo-html-html5-icon-2582748%2F&psig=AOvVaw2ZbKUe1AAaMYcxufpyH2Kd&ust=1643742669389000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJCM4OjY3PUCFQAAAAAdAAAAABAD' alt='Html5'>
-                     <img src='https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png' alt='React js'>
-                </div>
-            </section>
-            <section>
-                <div class='contact' id='contact'>
-                    <div class='heading'>
-                        <h1>Contact<span> me</span></h1>
-                    </div>
-                    <div class='content'>
-                        <div class='row'>
-
-                            <div class='info'>
-                                <h3><i class='fas fa-envelope'></i> awotimilehin.babatunde@gmail.com</h3>
-                                <h3><i class='fas fa-phone'></i> +2347011342465</h3>
-                                <h3><i class='fas fa-map-marker-alt'></i>  Nigeria</h3>
-                            </div>
-                            <form action=''>
-                                <input type='text' class='box' placeholder="Enter your name">
-                                <input type='email' class='box' placeholder="Enter your email">
-                                <input type='text' class='box' placeholder="project">
-                                <textarea name='' id='' cols='30' rows='10' class='message' placeholder='Message'></textarea>
-                                <button type='submit' class='btn'>Send<i class='fas fa-paper-plane'></i></button>
-                            </form>
+                </section>
+                <section>
+                    <div class='about' id='about'>
+                        <div class='heading'>
+                            <h1>About <span>me</span></h1>
+                            
                         </div>
+                        <p>Soon to be radiologist. Experienced with javascript,
+                            React js,Css3,Html5.
+                        </p>
+                        <p>Quick to learn and master new technologies, successful working in both team and self-directed settings.</p>
                     </div>
-                </div>
-            </section>
+                    <p class='skill'>
+                        Skill
+                    </p>
+                    <div class='skillsImage'>
+    
+                        <img src='data:image/jpeg;base64,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'>
+                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png'alt='css'>
+                         <img scr='https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Flogo-html-html5-icon-2582748%2F&psig=AOvVaw2ZbKUe1AAaMYcxufpyH2Kd&ust=1643742669389000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJCM4OjY3PUCFQAAAAAdAAAAABAD' alt='Html5'>
+                         <img src='https://www.freecodecamp.org/news/content/images/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png' alt='React js'>
+                    </div>
+                </section>
+                    <section>
+                        <div class='portfolio' id='portfolio'>
+                            <div class='heading'>
+                                <h1>port<span>folio</span></h1>
+                            </div>
+                            <div class='box-container'>
+                                <div class='box'>
+                                    <i class='fab fa-html5'></i>
+                                    <p>I learnt html5</p>
+                                </div>
+                                <div class='box'>
+                                    <i class='fab fa-css3'></i>
+                                    <p>I learnt html5</p>
+                                </div>
+                                <div class='box'>
+                                    <i class='fab fa-js'></i>
+                                    <p>I learnt html5</p>
+                                </div>
+                                <div class='box'>
+                                    <i class='fab fa-react'></i>
+                                    <p>I learnt html5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+
+                        <div class='contact' id='contact'>
+                            <div class='heading'>
+                                <h1>Contact<span> me</span></h1>
+                            </div>
+                            <div class='content'>
+                                <div class='row'>
+        
+                                    <div class='info'>
+                                        <h3><i class='fas fa-envelope'></i> awotimilehin.babatunde@gmail.com</h3>
+                                        <h3><i class='fas fa-phone'></i> +2347011342465</h3>
+                                        <h3><i class='fas fa-map-marker-alt'></i>  Nigeria</h3>
+                                    </div>
+                                    <form action=''>
+                                        <input type='text' class='box' placeholder="Enter your name">
+                                        <input type='email' class='box' placeholder="Enter your email">
+                                        <input type='text' class='box' placeholder="project">
+                                        <textarea name='' id='' cols='30' rows='10' class='message' placeholder='Message'></textarea>
+                                        <button type='submit' class='btn'>Send<i class='fas fa-paper-plane'></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
         </body>
     </head>
 </html>

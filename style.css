@@ -44,6 +44,7 @@ header {
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    transition: all 2s linear;
 }
 header .user img{
     height: 17rem;
@@ -92,9 +93,9 @@ header .nav ul li a:hover{
 }
 .home{
     display:flex;
-    justify-content: center;
-    flex-flow:column;
-    padding:0 15rem;
+    align-items: center;
+    flex-flow: column;
+    padding:15rem 0;
 }
 .home h3{
     font-size:2.5rem;
@@ -158,13 +159,44 @@ header .nav ul li a:hover{
     height:250px;
     flex-flow: row nowrap;
 }
+.portfolio .box-container{
+    padding:2rem 0;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.portfolio .box-container .box{
+    margin:3rem;
+    padding:1rem;
+    box-shadow: 1rem 2rem 2rem black;
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    text-align: center;
+    width:32rem;
+    color:white;
+}
+.portfolio .box-container .box:hover{
+    transition: all 15s linear;
+    background-color:greenyellow;
+}
+.portfolio .box-container .box i{
+    color:#eee;
+    padding:1rem 0;
+    font-size: 3rem;
+    color:rgba(13,41,85,0.5);
+}
+.portfolio .box-container .box p{
+    color:#eee;
+    padding:5rem 2rem;
+    font-size: 2.5rem;
+}
 .contact .row{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.contact .row .content{
+.contact .content .row{
     flex:1 1 30rem;
     padding:4rem;
     padding-bottom:0;
@@ -255,7 +287,7 @@ header .nav ul li a:hover{
 
 @media(max-width:600px){
     header{
-        width:50vw;
+       width:100vw;
     }
     .contact .row{
         display:flex;
