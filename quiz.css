@@ -1,0 +1,60 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --hue-natural:200;
+    --hue-wrong:0;
+    --hue-correct:145;
+}
+body{
+    --hue:var(--hue-natural);
+    padding:0;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue),100%, 20%);
+}
+.container{
+    width:800px;
+    max-width:80%;
+    padding:10px;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 2px;
+    overflow: hidden;
+}
+.answer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin:20px 0;
+}
+.btn{
+    --hue:var(--hue-natural);
+    border:1px solid hsl(var(--hue),100%, 50%);
+    background-color: hsl(var(--hue),100%, 80%);
+    border-radius: 0.5rem;
+    padding:5px 8px;
+    color:rgba(0,0,0,.8);
+    outline:none;
+}
+.btn:hover{
+    border-color: black;
+    color:rgba(0,0,0,1);
+}
+.start-btn, .next-btn{
+    padding:20px 20px;
+    font-size: 2.4rem;
+}
+.control{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+    display: none;
+}
