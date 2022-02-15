@@ -58,3 +58,15 @@ body{
 .question{
     display: none;
 }
+body.correct{
+    --hue:var(--hue-correct);   
+}
+body.wrong{
+    --hue:var(--hue-wrong);
+}
+.wrong{
+    --hue:var(--hue-wrong);
+}
+.correct{
+    --hue:var(--hue-correct);
+}
